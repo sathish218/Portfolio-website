@@ -16,7 +16,10 @@ body {
   height: 50px;
   margin-left: 20px;
 }
-
+.logo img{
+  width: 100%;
+  height: 100%;
+}
 header {
   background-color: rgba(55, 54, 53,0.5);
   position: sticky;
@@ -39,10 +42,10 @@ label #btn,
     cursor: pointer;
     display: none;
   }
-  #check{
+
+  .nav-button{
     display: none;
   }
-
 .navbar{
   display: flex;
   flex-wrap: wrap;
@@ -336,16 +339,31 @@ form input {
   color: white;
   
 }
-.projects img{
-  height: 500px;
-  width:700px;
-}
+
 .projects h2{
   font-size: 30px;
   font-weight: 500;
   padding: 20px;
 }
-
+.div-cards{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.div-cards >div{
+  border:2px solid white;
+  width: 300px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+ color:black;
+ background-color:#FFFFFF; 
+}
+.div-cards img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 footer {
   color: white;
   font-size: 20px;
@@ -481,6 +499,7 @@ svg {
       z-index: 10;
       width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       align-items: center;
     
@@ -489,12 +508,12 @@ svg {
       left:6%;
       top: 20px;
       width: 130px;
+      align-self: flex-start;
     }
-  
-  
-  .navbar{
+
+  .navbar ul{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     overflow: hidden;
@@ -522,7 +541,9 @@ svg {
     
   
   }
-  
+  .nav-button{
+    display: block;
+  }
   .h2 {
     font-size: 100px;
   }
@@ -768,22 +789,6 @@ svg {
     color: #FFFFFF;
     border-radius: 5px;
     font-size: 20px;
-  }
-  .div-cards{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
-    width: 100%;
-    gap: 30px;
-    margin: 0;
-    margin-top: 20px;
-    padding: 10px;
-    
-  }
-  .grid-shilds{
-    background-color: white;
-    border-radius: 10px;
-    height: 150px;
-    
   }
   
   footer {
