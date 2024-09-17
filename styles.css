@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
+  scroll-behavior: smooth;
  
 
 }
@@ -142,13 +143,13 @@ a:hover:after{
 
 .about-me h2 {
   font-size: 30px;
-  color: #e54914;
+  color:#ffbd39;
   padding: 20px 0;
   stroke: white 1px;
 
 }
 .span1{
-  color:#e54914;
+  color:#ffbd39;
 }
 
 .button1 {
@@ -334,36 +335,7 @@ form input {
   border-radius: 5px;
   font-size: 20px;
 }
-.projects{
-  text-align: center;
-  color: white;
-  
-}
 
-.projects h2{
-  font-size: 30px;
-  font-weight: 500;
-  padding: 20px;
-}
-.background{
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-.div-cards >div{
-  border:2px solid white;
-  width: 300px;
-  padding-bottom: 50px;
-  border-radius: 5px;
- color:black;
- background-color:#FFFFFF; 
-}
-.div-cards img{
-  
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 footer {
   color: white;
   font-size: 20px;
@@ -511,17 +483,23 @@ svg {
       align-self: flex-start;
     }
 
-  .navbar ul{
-    display: flex;
+  .nav{
+    display: none;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     overflow: hidden;
+    display: none;
+    transition: 0.5em;
+  }
+  .navbar{
+    background-color: transparent;
   }
   .navbar a{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    margin: 0;
     position:relative;
   
   }
@@ -543,6 +521,15 @@ svg {
   }
   .nav-button{
     display: block;
+    color: white;
+    font-size: larger;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .nav-show{
+    display: flex;
   }
   .h2 {
     font-size: 100px;
