@@ -9,7 +9,7 @@
 }
 
 body {
-  background-color: black;
+  background-color:black;
   overflow-x: hidden;
 }
 .logo{
@@ -530,6 +530,7 @@ svg {
   }
   .nav-show{
     display: flex;
+
   }
   .h2 {
     font-size: 100px;
@@ -641,7 +642,7 @@ svg {
   }
   
   .contact {
-    background-image: url(/assets/images/backgound.jpg);
+    background-image: url(./assets/images/backgound.jpg);
     border-radius: 50px;
     height: 100%;
     width: 100%;
@@ -760,11 +761,11 @@ svg {
   }
   
   form input {
-    padding: 5px 50px;
+  
     width: 100%;
     border-radius: 5px;
     border: 1px solid white;
-    font-size: 10px;
+  
   
   }
   
