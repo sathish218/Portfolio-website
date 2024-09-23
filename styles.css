@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
  
 
@@ -33,18 +33,9 @@ header {
   align-items: center;
 
 }
-label #btn,
-  label #cancel{
-    color:white;
-    font-size: 40px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
 
-  .nav-button{
+
+.nav-button{
     display: none;
   }
 .navbar{
@@ -62,7 +53,7 @@ label #btn,
   margin: 20px;
 
 }
-a::after{
+.navbar a::after{
   content: "";
   background-color: #FFFFFF;
   height: 1.5px;
@@ -115,20 +106,32 @@ a:hover:after{
 }
 
 .img2 {
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
   border-radius: 5px;
 }
 
 .about-me {
+  justify-content: center;
   justify-content: space-evenly;
   color: white;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 150px;
 
 }
-
+.about-p{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: #fee5b5;
+  font-size: 20px;
+}
+.about-p::before,.about-p::after{
+ content:"";
+ height: 3px;
+ width: 30px;
+ background-color: #FFFFFF;
+}
 .about-me h1 {
   font-size: 60px;
   text-decoration: underline white 2px;
@@ -136,23 +139,52 @@ a:hover:after{
 }
 
 .about-me p {
-  width: 500px;
-  font-size: 30px;
+  letter-spacing: 1;
+  line-height: 1.5;
+  margin-top: 30px;
+  width: 700px;
+  font-size: 22px;
+
+}
+.icons3{
+  margin-top: 30px;
+}
+.about-text{
+padding-top: 50px;
+padding-bottom: 60px;
+}
+
+.icons3 i{
+  margin:20px;
+  font-size: 23px;
+  color:black;
+  padding: 10px;
+  background-color: #fee5b5;
+  border-radius: 10px;
+}
+
+.about-me-h2{
+  font-size: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 75px;
+  
+}
+.about-me h2{
+  font-size: 25px;
+ color: #ffbd39;
+ margin-top: 70px;
 
 }
 
-.about-me h2 {
-  font-size: 30px;
-  color:#ffbd39;
-  padding: 20px 0;
-  stroke: white 1px;
 
-}
 .span1{
   color:#ffbd39;
 }
 
+
 .button1 {
+  margin-top: 60px;
   border-radius: 4px;
   background-color: #e54941;
   border: none;
@@ -163,7 +195,7 @@ a:hover:after{
   width: 200px;
   transition: all 0.5s;
   cursor: pointer;
-  margin-top: 20px;
+ 
 }
 
 .button1 span {
@@ -364,6 +396,18 @@ footer {
   flex-wrap: wrap;
 
 }
+.skills-p{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  
+}
+.skills-p::before,.skills-p::after{
+  content:"";
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+ }
 
 
 .outter {
@@ -393,10 +437,18 @@ footer {
   animation: anim1 2s linear forwards;
 }
 .skills-p{
-  color:white;
-  font-size:30px ;
+  font-size:23px ;
   width: 75%;
   margin: 0 auto;
+  color: #fee5b5;
+}
+.skills-p2{
+  font-size: 20px;
+ margin: 0 auto;
+  width: 70%;
+  color: white;
+  line-height: 1.5;
+  margin-top: 20px;
 }
 .circle2 {
   fill: none;
@@ -424,13 +476,31 @@ svg {
   top: 0;
   left: 0;
 }
+.skill-icon{
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+ padding:40px 20px;
+ background-color:#fee5b5;
+ color: black;
+
+ 
+}
+.skill-icon h2{
+  color: #0c1e2c;
+}
+.skill-icon i{
+  font-size: 40px;
+  color:#e54941;
+ text-align: center;
+}
 
 .skills {
   display: flex;
-  gap: 100px;
+  gap: 200px;
   color: #FFFFFF;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-bottom: 200px;
 }
 .skill-2{
@@ -439,13 +509,13 @@ svg {
 
 @keyframes anim1 {
   100% {
-    stroke-dashoffset: 165;
+    stroke-dashoffset: 100;
   }
 }
 
 @keyframes anim2 {
   100% {
-    stroke-dashoffset: 150;
+    stroke-dashoffset: 260;
   }
 }
 
@@ -456,12 +526,12 @@ svg {
 }
 .skills-h2{
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   justify-content: center;
   text-align: center;
 }
 .skills-h2{
-  margin: 10px;
+  margin: 5px;
 }
 .projects{
   display: flex;
@@ -552,12 +622,13 @@ color: #fee5b5;
   padding: 70px;
   color: #0c1e2c;
   font-size: 40px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 5px;
   box-shadow: orange 15px 15px;
  }
  .footer-icon2 p{
   font-size: 20px;
+ 
 
  }
  .footer-end{
@@ -588,6 +659,7 @@ color: #fee5b5;
 @media (max-width:786px){
   body {
     background-color: black;
+    overflow-x: hidden;
   }
   
   header {
@@ -695,8 +767,8 @@ color: #fee5b5;
   }
   
   .img2 {
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 350px;
     border-radius: 5px;
   }
   
@@ -724,9 +796,10 @@ color: #fee5b5;
   
   .about-me h2 {
     font-size: 30px;
-    color: #e54941;
+    color:#ffbd39;
     padding: 20px 0;
     stroke: white 1px;
+    margin-left: 5px;
   
   }
   
@@ -957,9 +1030,9 @@ color: #fee5b5;
     animation: anim1 2s linear forwards;
   }
   .skills-p{
-    color:white;
+    color:#ffbd39;
     font-size:30px ;
-    width: 75%;
+    width: 90%;
     margin: 0 auto;
   }
   .circle2 {
@@ -1059,7 +1132,7 @@ color: #fee5b5;
   .footer-icon2{
     align-items: center;
     background-color: aliceblue;
-    padding: 70px;
+    padding: 50px;
     color: #0c1e2c;
     font-size: 40px;
     margin: 10px;
