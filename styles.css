@@ -383,7 +383,7 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #0c1e2c;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 
 
@@ -570,6 +570,7 @@ svg {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  
 
 
 }
@@ -623,6 +624,16 @@ color: #fee5b5;
   justify-content: center;
   color: #ffbd39;
   
+}
+.project-p2{
+  color: white;
+  line-height: 1.5;
+  width: 75%;
+  font-size: 20px;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  text-align: justify;
 }
 .project-p::before,.project-p::after{
   content:"";
