@@ -616,6 +616,20 @@ color: #fee5b5;
   text-decoration: none;
   color: #0c1e2c;
 }
+
+.project-p{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: #ffbd39;
+  
+}
+.project-p::before,.project-p::after{
+  content:"";
+  height: 3px;
+  width: 30px;
+  background-color: #FFFFFF;
+ }
 .footer-icon2{
   align-items: center;
   background-color: aliceblue;
