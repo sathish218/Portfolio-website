@@ -1052,7 +1052,7 @@ color: #fee5b5;
     stroke-width: 20px;
     stroke-dasharray: 473;
     stroke-dashoffset: 473;
-    animation: anim1 2s linear forwards;
+    animation: anim1 2s linear infinite forwards;
   }
   .skills-p{
     color:#ffbd39;
@@ -1066,7 +1066,7 @@ color: #fee5b5;
     stroke-width: 20px;
     stroke-dasharray: 473;
     stroke-dashoffset: 473;
-    animation: anim2 2s linear forwards;
+    animation: anim2 2s linear infinite forwards;
   }
   .circle3 {
     fill: none;
@@ -1074,7 +1074,7 @@ color: #fee5b5;
     stroke-width: 20px;
     stroke-dasharray: 473;
     stroke-dashoffset: 473;
-    animation: anim3 2s linear forwards;
+    animation: anim3 2s linear infinite forwards;
   }
   
   .relative{
