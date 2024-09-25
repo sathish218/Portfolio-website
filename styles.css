@@ -434,7 +434,7 @@ footer {
   stroke-width: 20px;
   stroke-dasharray: 473;
   stroke-dashoffset: 473;
-  animation: anim1 2s linear forwards;
+  animation: anim1 5s linear infinite forwards;
 }
 .skills-p{
   font-size:23px ;
@@ -456,7 +456,7 @@ footer {
   stroke-width: 20px;
   stroke-dasharray: 473;
   stroke-dashoffset: 473;
-  animation: anim2 2s linear forwards;
+  animation: anim2 5s linear forwards infinite;
 }
 .circle3 {
   fill: none;
@@ -464,7 +464,7 @@ footer {
   stroke-width: 20px;
   stroke-dasharray: 473;
   stroke-dashoffset: 473;
-  animation: anim3 2s linear forwards;
+  animation: anim3 5s linear infinite forwards;
 }
 
 .relative{
